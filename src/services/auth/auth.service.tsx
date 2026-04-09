@@ -4,7 +4,6 @@ import {
   RegisterDto,
   AuthResponse,
 } from "../../interfaces/auth.interface";
-import { useRouter } from "next/navigation";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -50,7 +49,6 @@ export const authService = {
 
 
    handleLogout:  async () => {
-
     try {
       const response = await fetch(`${API_URL}/auth/logout`, {
         method: "POST",

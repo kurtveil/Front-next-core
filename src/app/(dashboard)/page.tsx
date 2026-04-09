@@ -2,6 +2,7 @@
 import { Button } from "@/src/components/ui/Button";
 import { Card, CardBody, CardFooter } from "@/src/components/ui/Card";
 import { CheckCircle, Rocket, Users } from "lucide-react";
+import { useRouter } from "next/navigation";
 const OVERVIEW_LIST = [
   {
     title: "ACTIVE PROJECTS",
@@ -44,6 +45,8 @@ const OVERVIEW_LIST = [
   },
 ];
 export default function Home() {
+    const router = useRouter();
+  
   return (
     <div>
       <h1 className="text-3xl font-bold">
@@ -52,7 +55,8 @@ export default function Home() {
       <p>
         Manage your active operations and track team productivity in real-time
       </p>
-      <Button type="button" name="New project" />
+      <Button type="button" name="New project" handleClick={() => router.push("projects/create-project")} />
+    
       {OVERVIEW_LIST.map((menu, i) => {
         return (
           <Card key={i} className="my-4">

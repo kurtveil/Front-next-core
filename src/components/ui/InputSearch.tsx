@@ -11,7 +11,7 @@ export default function SearchInput() {
       <input
         type="search"
         placeholder="Buscar productos..."
-        className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg bg-cyan text-white focus:ring-2 focus:ring-blue-900 focus:border-blue-500 outline-none transition-all"
+        className="w-full block pl-10 pr-3 py-2 border border-gray-300 rounded-lg bg-cyan text-white focus:ring-2 focus:ring-blue-900 focus:border-blue-500 outline-none transition-all"
       />
     </div>
   );
