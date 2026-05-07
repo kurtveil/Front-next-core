@@ -45,8 +45,8 @@ export const MENU_OPTIONS = [
 export default function Sidebar() {
   return (
     <>
-      <aside className="w-64 border-r border-slate-800 bg-linear-to-b from-gray-950 to-mauve-950 hidden md:block shrink-0">
-        <div className="p-6 font-bold text-xl  border-slate-800 text-white">
+      <aside className="w-64 border-r border-slate-800 bg-linear-120 text-amber-50 from-gray-950 to-mist-950 hidden md:block shrink-0">
+        <div className="p-6 font-bold text-xl  border-slate-800 ">
           <h6>{"Premium WorkSpace"}</h6>
         </div>
         <nav className=" p-4 space-y-2">

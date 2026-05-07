@@ -22,7 +22,7 @@ export function Button({
       type={type}
       disabled={isDisabled}
       onClick={handleClick}
-      className={`flex p-6 max-w-2xl cursor-pointer my-3 py-2 text-white ${className}  rounded-lg hover:from-slate-800 hover:to-slate-600 transition-all shadow-md ${colorClasses} `}
+      className={` justify-center flex p-6 max-w-2xl cursor-pointer my-3 py-2 text-white ${className} text-center rounded-3xl hover:from-slate-800 hover:to-slate-600 transition-all shadow-md ${colorClasses} `}
     >
       {children}
       {name}

@@ -21,14 +21,12 @@ export default function Navbar() {
         router.push("/login");
       }
     } catch (error: any) {
-      console.log(error);
-      
-      // toast.error(error);
+      toast.error(error);
     }
   }
   return (
     <>
-      <header className="h-16 border-b border-cyan-800 bg-linear-to-b from-gray-950 to-mauve-950 flex items-center justify-between px-8 sticky top-0 z-10">
+      <header className="h-16 border-b border-cyan-800 bg-linear-30 from-gray-950 to-mauve-950 flex items-center justify-between px-8 sticky top-0 z-10">
         <div className="text-slate-200 text-sm">
           <h6>{path}</h6>
         </div>

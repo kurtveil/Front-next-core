@@ -3,7 +3,7 @@ import React from 'react';
 
 // Contenedor principal (el "esqueleto")
 export const Card = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => (
-  <div className={`bg-gray-900  border border-0 rounded-xl p-6 shadow-sm text-white rounded-xl shadow-sm overflow-hidden ${className}`}>
+  <div className={`bg-gray-600 bg-transparent  border border-gray-500 rounded-3xl p-4 text-white shadow-sm overflow-hidden ${className}`}>
     {children}
   </div>
 );

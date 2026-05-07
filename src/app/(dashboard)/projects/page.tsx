@@ -63,35 +63,60 @@ export default function ProjectPage() {
       {projects.map((project: Project, i) => {
         return (
           <Card key={i} className="my-4">
-            <CardBody className="flex justify-between items-end">
-              <ul>
-                <li>
-                  <Rocket className="w-15 h-15 m-3 text-gray-700" />
-                </li>
-                <li className="text-sm">PRIORITY</li>
-                <li>High</li>
-              </ul>
-              <ul>
-                <li>
-                <CardTitle>{project.name}</CardTitle>
-                </li>
-                <li>
-                  <span className="text-sm">LEAD: </span>
-                  <span>Sara </span>
-                </li>
-                <li className="text-sm">STATUS</li>
-                <li>
-                  <span className="rounded bg-blue-400 ">Active</span>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <span className="text-sm">CLIENT: </span>
-                  <span>Horizon S.A</span>
-                </li>
-                <li className="text-sm">TIMELINE</li>
-                <li>65% complete</li>
-              </ul>
+            <CardBody className="flex justify-between">
+              <div className="max-w-4xl mx-auto p-2 rounded-xl">
+                <div className="grid grid-cols-6 gap-4">
+                  <div className="col-span-3 p-2 rounded text-center">
+                    <Rocket className="w-15 h-15 m-3 text-gray-700" />
+                  </div>
+                  <div className="col-span-3 p-2 rounded text-center">
+                    <CardTitle>{project.name} </CardTitle>
+                  </div>
+
+                  <div className="col-span-2 p-2 rounded text-center"></div>
+
+                  <div className="col-span-2 p-2 rounded text-center">
+                    <ul>
+                      <li>
+                        <span className="text-sm">Lead: </span>
+                        <span>Sara </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="col-span-2 p-2 rounded text-center">
+                    <ul>
+                      <li>
+                        <span className="text-sm">Client: </span>
+                        <span>Horizon S.A</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="col-span-2 p-2 rounded text-center">
+                    <ul>
+                      <li className="text-xs">PRIORITY</li>
+                      <li className="text-red-600 font-bold">! High</li>
+                    </ul>
+                  </div>
+                  <div className="col-span-2 p-2 rounded text-center">
+                    <ul>
+                      <li className="text-xs">STATUS</li>
+                      <li className="m-2">
+                        <span className="rounded-2xl bg-blue-400 text-blue-700 text-xs p-2 font-bold w-3">
+                          Active
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-span-2 p-2 rounded text-center">
+                    <ul>
+                      <li className="text-xs">TIMELINE</li>
+                      <li className="text-xs">65% complete</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </CardBody>
             <CardFooter>
               <div className="flex items-start justify-start">

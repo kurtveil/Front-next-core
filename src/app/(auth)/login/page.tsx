@@ -40,17 +40,17 @@ export default function Loginpage() {
   const formularioValido = emailValido && passwordValida;
 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans min-h-screen ">
-      <main className="flex flex-1 w-full flex-col items-center justify-center bg-linear-to-b from-mist-800 to-cyan-950">
-        <Card>
-          <h1 className="text-center text-4xl">Login</h1>
+    <div className="flex flex-col flex-1 items-center justify-center font-sans  ">
+      <main id="bg_test" className="flex flex-1 w-full flex-col items-center justify-center bg-linear-to-b from-mist-800 to-cyan-950">
+        <Card className="w-96 h-[30rem]">
+          <h1 className="text-center text-3xl">Login</h1>
           {/* Mostrar alerta si hay error */}
           {errorMsg && (
             <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded">
               {errorMsg}
             </div>
           )}
-          <Form action={handleLogin}>
+          <Form action={handleLogin} className="my-4">
             <CardBody>
               <Input type="email" label="Email" setValue={handleEmail} />
               <Input

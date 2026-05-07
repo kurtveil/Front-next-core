@@ -3,6 +3,7 @@ import { Button } from "@/src/components/ui/Button";
 import { Card, CardBody, CardFooter } from "@/src/components/ui/Card";
 import { CheckCircle, Rocket, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
+
 const OVERVIEW_LIST = [
   {
     title: "ACTIVE PROJECTS",
@@ -48,7 +49,7 @@ export default function Home() {
     const router = useRouter();
   
   return (
-    <div>
+    <div className="text-white">
       <h1 className="text-3xl font-bold">
         Overview <span className="text-blue-400 font-bold">Hub</span>
       </h1>
