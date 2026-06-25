@@ -45,7 +45,7 @@ export default function ProjectPage() {
   if (loading) return <p>Cargando productos...</p>;
 
   return (
-    <div>
+    <div className="text-white">
       <h1 className="text-3xl font-bold">Projects</h1>
       <p>
         Oversee enterprise operations, manage architectural timelines and

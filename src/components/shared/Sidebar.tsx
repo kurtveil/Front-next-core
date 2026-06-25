@@ -40,6 +40,11 @@ export const MENU_OPTIONS = [
     name:'Archive',
     route: '/archive',
     icon: <Archive className="w-7 h-7 m-3 text-white hover:text-blue-700" />
+  },
+   {
+    name:'Piano Learning',
+    route: '/read-chords',
+    icon: <Archive className="w-7 h-7 m-3 text-white hover:text-blue-700" />
   }
 ];
 export default function Sidebar() {
