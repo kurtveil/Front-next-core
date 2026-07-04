@@ -21,10 +21,12 @@ export default function Loginpage() {
     setErrorMgs("");
     try {
       const data = await authService.login({ email, password });
+      console.log(data);
+      
       if (data.status == 200) {
-        localStorage.setItem("token", data.access_token);
+        sessionStorage.setItem("token", data.access_token);
         toast.success("¡Bienvenido de nuevo!");
-        return router.push("/");
+        return router.push("/projects");
       }
       toast.error(data.message || "Error al iniciar sesión");
     } catch (error: any) {
